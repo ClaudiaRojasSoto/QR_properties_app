@@ -7,8 +7,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: qr_properties_app
-  password: <%= ENV['QR_PROPERTIES_APP_DATABASE_PASSWORD'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
