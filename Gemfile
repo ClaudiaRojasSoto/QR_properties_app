@@ -11,6 +11,10 @@ gem 'devise'
 
 gem 'cancancan', '~> 3.0'
 
+gem 'rqrcode'
+
+gem 'google-drive-ruby'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
