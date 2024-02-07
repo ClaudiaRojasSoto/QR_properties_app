@@ -1,21 +1,19 @@
 <div align="center">
 
-![EED](app.png)
 
 <a name="readme-top"></a>
 
-  <h3><b>Final Capstone Back End</b></h3>
+  <h3><b>QR_properties_app</b></h3>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Final Capstone Back End ](#-final-capstone-back-end-)
+- [📖 QR\_properties\_app ](#-qr_properties_app-)
   - [🛠 ER Diagram ](#-er-diagram-)
   - [💻 Link to Demo ](#-link-to-demo-)
   - [💻 Link to front end ](#-link-to-front-end-)
-  - [💻 link to Kanban board information ](#-link-to-kanban-board-information-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -27,8 +25,7 @@
     - [Usage](#usage)
   - [🔬 Running Tests ](#-running-tests-)
     - [Test Suite](#test-suite)
-  - [💻 API Documentation ](#-api-documentation-)
-  - [👥 Authors ](#-authors-)
+  - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -37,39 +34,27 @@
   - [📝 License ](#-license-)
 
 
-# 📖 Final Capstone Back End <a name="about-project"></a>
+# 📖 QR_properties_app <a name="about-project"></a>
 
-**final_capstone_back_end** The back-end component of this final capstone project is developed using Ruby on Rails, configured to serve as an API. This API is designed to facilitate reservations or appointments for test drives of cars. It leverages a PostgreSQL database to manage and store reservation data.
+**QR_properties_app** 
 
 ## 🛠 ER Diagram <a name="built-with"></a>
 
-![ER Diagram](diagram1.jpeg)
+![ER Diagram soon](jpeg)
 
 ## 💻 Link to Demo <a name="link-to-demo"></a>
 
-[Link to Demo](https://driver-front.onrender.com/)
+[Link to Demo soon]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Link to front end <a name="built-with"></a>
 
 
-[Link to Front End](https://github.com/ClaudiaRojasSoto/Final-Capstone-Front-End)
+[Link to video soon]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 💻 link to Kanban board information <a name="built-with"></a>
-
-[Link to Kanban Board](https://github.com/ClaudiaRojasSoto/Final-Capstone-Back-End/projects/1)
-
-[Initial state](https://github.com/ClaudiaRojasSoto/Final-Capstone-Back-End/issues/16)
-
-This project was completed by two of the three original Team members:
-
-- Claudia Rojas
-- Pablo Bonasera
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -119,7 +104,7 @@ In your terminal, navigate to the folder of your choice and clone the repository
 
 ```sh
 cd my-folder
-git clone https://github.com/ClaudiaRojasSoto/final_capstone_back_end.git
+git clone https://github.com/ClaudiaRojasSoto/QR_properties_app.git
 
 ```
 
@@ -128,7 +113,7 @@ git clone https://github.com/ClaudiaRojasSoto/final_capstone_back_end.git
 After cloning the project, change into the project directory:
 
 ```sh
-cd final_capstone_back_end
+cd QR_properties_app
 
 ```
 
@@ -188,30 +173,14 @@ rspec
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 💻 API Documentation <a name="getting-started"></a>
-
-<div align="center">
-
-[Run in Postman](https://winter-desert-419071.postman.co/workspace/My-Workspace~efdb5aba-9d35-41c3-848e-87060938ceb9/collection/19270283-b003a584-76ab-4464-8520-ecbd8d4677df?action=share&creator=19270283)
 
 
-![API Methods](api.png)
-
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Claudia Rojas**
 
 - GitHub: [@ClaudiaRojas](https://github.com/ClaudiaRojasSoto)
 - LinkedIn: [@ClaudiaRojas](https://www.linkedin.com/in/claudia-rojas-soto/)
-
-👤 **Pablo Bonasera**
-
-- GitHub: [@PabloBona](https://github.com/PabloBona)
-- LinkedIn: [Pablo Bonasera](https://www.linkedin.com/in/pablo-bonasera/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -229,7 +198,7 @@ rspec
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ClaudiaRojasSoto/final_capstone_back_end/issues).
+Feel free to check the [issues page](https://github.com/ClaudiaRojasSoto/QR_properties_app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,9 +212,6 @@ And think If you enjoy gift me a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Behance and Murat Korkmaz for the [original design](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign)
-- Microverse for providing the opportunity to learn in a collaborative environment.
-- React.js Documentation for valuable resources on React development.
 - GitHub for version control and collaboration tools.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
