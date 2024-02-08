@@ -2,7 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Change the miapp.com to the rigth url later.
-  Rails.application.routes.default_url_options[:host] = 'miaplicacion.com'
+  # Rails.application.routes.default_url_options[:host] = 'miaplicacion.com'
   # Code is not reloaded between requests.
   config.enable_reloading = false
 
