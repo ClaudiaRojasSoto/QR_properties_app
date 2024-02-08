@@ -7,8 +7,14 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <%= javascript_importmap_tags %>
+    
+        <%= javascript_importmap_tags %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-streetview/dist/leaflet-streetview.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-streetview/dist/leaflet-streetview.css" />
+
+    
   </head>
 
   <body>

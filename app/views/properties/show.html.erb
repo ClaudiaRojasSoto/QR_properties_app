@@ -1,0 +1,36 @@
+<h1 class="text-center text-secondary">Detalles de la Propiedad</h1>
+<div class="container-fluid">
+  <p class="text-secondary ms-3">
+    <strong>Nombre:</strong>
+    <%= @property.name %>
+  </p>
+
+  <p class="text-secondary ms-3">
+    <strong>Dirección:</strong>
+    <%= @property.address %>
+  </p>
+
+  <p class="text-secondary ms-3">
+    <strong>Descripción:</strong>
+    <%= @property.description %>
+  </p>
+
+  <!-- Contenedor para el mapa -->
+  <div id="map" class="col-md-9" style="height: 400px;"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var map = L.map('map').setView([<%= @map[:center][0] %>, <%= @map[:center][1] %>], <%= @map[:zoom] %>);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+
+      var marker = L.marker([<%= @map[:center][0] %>, <%= @map[:center][1] %>]).addTo(map);
+    });
+  </script>
+</div>
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back to List', properties_path %>
