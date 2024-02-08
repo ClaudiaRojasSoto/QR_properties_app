@@ -5,7 +5,9 @@ class PropertiesController < ApplicationController
     @properties = Property.all
   end
 
-  def show; end
+  def show
+    @map = MapService.initialize_map(@property.address)
+  end
 
   def new
     @property = Property.new
@@ -14,7 +16,8 @@ class PropertiesController < ApplicationController
   def create
     @property = Property.new(property_params)
     if @property.save
-      @property.generate_qr_code(request.host_with_port)
+      qr_code_url = QrCodeGeneratorService.call(@property, request.host_with_port)
+      @property.update(qr_code_url:)
       redirect_to @property, notice: 'Property was successfully created.'
     else
       render :new
@@ -25,6 +28,8 @@ class PropertiesController < ApplicationController
 
   def update
     if @property.update(property_params)
+      qr_code_url = QrCodeGeneratorService.call(@property, request.host_with_port)
+      @property.update(qr_code_url:)
       redirect_to @property, notice: 'Property was successfully updated.'
     else
       render :edit
@@ -32,7 +37,9 @@ class PropertiesController < ApplicationController
   end
 
   def destroy
+    qr_file_path = Rails.root.join('public', 'qr_codes', "property_#{@property.id}.png")
     @property.destroy
+    FileUtils.rm_f(qr_file_path)
     redirect_to properties_url, notice: 'Property was successfully destroyed.'
   end
 
@@ -43,6 +50,6 @@ class PropertiesController < ApplicationController
   end
 
   def property_params
-    params.require(:property).permit(:name, :address, :description, :qr_code_url)
+    params.require(:property).permit(:name, :address, :description)
   end
 end

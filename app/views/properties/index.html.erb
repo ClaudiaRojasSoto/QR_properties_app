@@ -1,13 +1,10 @@
-<h1>Properties</h1>
-
-<%= link_to 'New Property', new_property_path %>
-
-<table>
+<table aria-label="Property List">
   <thead>
     <tr>
       <th>Name</th>
       <th>Address</th>
       <th>Description</th>
+      <th>QR Code</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +15,10 @@
         <td><%= property.name %></td>
         <td><%= property.address %></td>
         <td><%= property.description %></td>
+        <td><%= link_to 'View QR Code', property_qr_code_path(property) %></td>
         <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
