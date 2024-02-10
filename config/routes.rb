@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :properties do
     resource :qr_code, only: [:show], controller: 'qr_codes'
   end
+  get '/gallery', to: 'properties#gallery', as: 'gallery'
 end
