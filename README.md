@@ -36,7 +36,9 @@
 
 # 📖 QR_properties_app <a name="about-project"></a>
 
-**QR_properties_app** 
+Welcome to **QR_properties_app**, an innovative and user-friendly Ruby on Rails solution crafted to revolutionize the property viewing and purchasing experience for a non-profit cause. Our application provides a streamlined interface for generating unique QR codes that link directly to a comprehensive page detailing each property for sale.
+
+By scanning the attached QR code, prospective buyers are directed to a URL showcasing the precise location on an interactive map, detailed high-quality images, key property information, and the option to schedule a visit at their convenience. This tool is built for simplicity and efficiency, allowing users to have all the information they need right at their fingertips.
 
 ## 🛠 ER Diagram <a name="built-with"></a>
 
@@ -76,12 +78,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [x] **Ruby on Rails**
-- [x] **API Endpoint**
-- [x] **Professional Documentation**
-- [x] **Linting for Code Quality**
-- [x] **Postgres Database**
-- [x] **Git Version Control**
+- [x] **QR Code Generation**: Quickly and securely generate QR codes for each listed property.
+- [x] **Detailed Viewing**: Offer a dedicated page per property featuring a map, high-quality photos, and all relevant details.
+- [x] **Visit Scheduling**: Enables potential buyers to select and schedule a visit through the platform.
+- [x] **Multi-City Support**: Accommodates properties located in various cities around the world, providing a global reach.
+- [x] **Social Focus**: Developed for a non-profit organization, all proceeds and benefits go towards supporting an educative cause.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
